@@ -113,4 +113,12 @@ public class AccountAPITests extends  AccountAPIBaseTests{
         JSONArray result2 = this.accountAPIService.getDepositHistory("btc");
         this.toResultString(AccountAPITests.LOG, "result", result2);
     }
+
+    @Test
+    public void getWithdrawHistory() {
+        JSONArray result = this.accountAPIService.getWithdrawHistory();
+        this.toResultString(AccountAPITests.LOG, "result", result);
+        JSONArray result2 = this.accountAPIService.getWithdrawHistory("btc");
+        this.toResultString(AccountAPITests.LOG, "result", result2);
+    }
 }

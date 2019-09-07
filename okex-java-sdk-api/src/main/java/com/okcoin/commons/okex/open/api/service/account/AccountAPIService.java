@@ -41,4 +41,7 @@ public interface AccountAPIService {
 
     JSONArray getDepositHistory(String currency);
 
+    JSONArray getWithdrawHistory();
+
+    JSONArray getWithdrawHistory(String currency);
 }

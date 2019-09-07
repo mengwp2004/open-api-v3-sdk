@@ -96,4 +96,14 @@ public class AccountAPIServiceImpl implements AccountAPIService {
     public JSONArray getDepositHistory(String currency) {
         return this.client.executeSync(this.api.getDepositHistory(currency));
     }
+
+    @Override
+    public JSONArray getWithdrawHistory() {
+        return this.client.executeSync(this.api.getWithdrawHistory());
+    }
+
+    @Override
+    public JSONArray getWithdrawHistory(String currency) {
+        return this.client.executeSync(this.api.getWithdrawHistory(currency));
+    }
 }
