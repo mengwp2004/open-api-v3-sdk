@@ -62,9 +62,9 @@ public interface AccountAPI {
     @GET("/api/account/v3/deposit/history/{currency}")
     Call<JSONArray> getDepositHistory(@Path("currency") String currency);
 
-    @GET("/api/account/v3/withdraw/history")
+    @GET("/api/account/v3/withdrawal/history")
     Call<JSONArray> getWithdrawHistory();
 
-    @GET("/api/account/v3/withdraw/history/{currency}")
+    @GET("/api/account/v3/withdrawal/history/{currency}")
     Call<JSONArray> getWithdrawHistory(@Path("currency") String currency);
 }
